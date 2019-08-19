@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+/* 메인슬라이드 */
+#orion{height: auto; padding: 0;}
+#orion .swiper-wrapper img{width: 100%; height: auto;}
+#orion .swiper-wrapper img{height: 100%; display: block;}
+#orion .swiper-wrapper img.pc{display: none;}
+#orion .swiper-wrapper img.tb{display: block;}
+#orion .swiper-wrapper img.mo{display: none;}
+
+/* 오리온 역사관 */
+.text-box li{float: none;}
+.text-box .history-title{
+  width: auto;
+  text-align: center;
+  margin-right:0;
+}
+.text-box .history-content{
+  margin: 20px auto;
+}
+.img-box img{width: 500px;}
+.img-box{top: 270px;}
+.img-box .btn-1956{top: 200px;}
+.img-box .btn-2019{top: 104px;}
+.btn-history{
+  width: 350px; height: 50px; line-height: 50px;
+  margin-top: 290px; background: #3b2e26;
+}
+.btn-history span{
+  font-size: 18px; font-weight: bold; 
+  text-align: center; color: #fff;
+}
+
+/* CF영상 */
+.cfvideo iframe{width: 600px;height:400px;}
+
+/* 매장찾기 */
+.store-search{float: left; width: 45%; height: 360px; margin-left: 20px;}
+#map{width: 45%; height: 360px; margin: 0;}
+.tab{padding: 50px 20px 0;}
+.store-search form {margin: 20px 20px 0;}

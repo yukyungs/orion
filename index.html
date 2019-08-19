@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="js/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/orion.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(max-width:991px)">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width:767px)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3dc2eae61af2f37c8546de955f19d7f6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/fontloading.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/orion.js"></script>
+</head>
+<body>
+    <div class="depth2-bg"></div>
+    <header id="header" class="center">
+        <!-- 오리온 로고 -->
+        <div class="title">
+            <h1><a href="#" class="icon icon-logo"><span class="blind">orion</span></a></h1>
+        </div>
+        <!-- 모바일에서만 보이는 메뉴버튼/닫기버튼 -->
+        <button class="btn-menu icon icon-menu"><i class="blind">메뉴</i></button>
+        
+        <!-- 네비게이션 -->
+        <div class="nav-m-bg"></div>
+        <nav>
+            <button class="icon icon-search-open"><span class="blind">검색</span></button>
+            <!-- 검색 -->
+            <form action="#" class="search">
+                <label for="search" class="blind">통합검색</label>
+                <input type="text" id="search">
+                <button class="icon icon-search"><span class="blind">검색</span></button>
+            </form>
+            <!-- 메뉴 -->
+            <ul class="gnb">
+                <!-- 1depth -->
+                <li>
+                    <a href="#">제품소개</a>
+                    <!-- 2depth -->
+                    <ul>
+                        <li><a href="#">닥터유</a></li>
+                        <li><a href="#">마켓오</a></li>
+                        <li><a href="#">초코파이</a></li>
+                        <li><a href="#">오리온파워브랜드</a></li>
+                        <li><a href="#">CF</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">플래그십스토어</a>
+                    <ul>
+                        <li><a href="#">마켓오레스토랑</a></li>
+                        <li><a href="#">초코파이하우스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li><a href="#">영업소위치</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul>
+                        <li><a href="#">오리온소개</a></li>
+                        <li><a href="#">오리온역사</a></li>
+                        <li><a href="#">오리온사업</a></li>
+                        <li><a href="#">IR정보</a></li>
+                        <li><a href="#">PR정보</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>            
+        </nav>
+        <!-- 기타메뉴 -->            
+        <ul class="util-nav">
+            <li class="util"><a href="http://recruitsales.orionworld.com/">인재채용</a></li>
+            <li class="lang"><a href="#">ENG</a></li>
+        </ul>  
+    </header>
+
+    <!-- 스크롤스파이-메뉴 -->
+    <aside id="navbar" class="navbar">        
+        <ul>
+            <li><a href="#header" class="active"><span>오리온</span></a></li>
+            <li><a href="#history"><span>역사관</span></a></li>
+            <li><a href="#event"><span>이벤트/소식</span></a></li>
+            <li><a href="#cfvideo"><span>CF영상</span></a></li>
+            <li><a href="#store"><span>매장찾기</span></a></li>
+        </ul> 
+        <span class="bar"></span>       
+    </aside>
+
+    <section>
+        <!-- 메인슬라이드 -->
+        <article id="orion">
+            <h2 class="blind">신제품광고</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/main_slide_1.jpg" alt="" class="pc">
+                        <img src="img/main_slide_1_tb.jpg" alt="" class="tb">
+                        <img src="img/main_slide_1_m.jpg" alt="" class="mo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main_slide_2.jpg" alt="" class="pc">
+                        <img src="img/main_slide_2_tb.jpg" alt="" class="tb">
+                        <img src="img/main_slide_2_m.jpg" alt="" class="mo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main_slide_3.jpg" alt="" class="pc">
+                        <img src="img/main_slide_3_tb.jpg" alt="" class="tb">
+                        <img src="img/main_slide_3_m.jpg" alt="" class="mo">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"><i class="icon icon-next"></i></div>
+                <div class="swiper-button-prev"><i class="icon icon-prev"></i></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+        <!-- 오리온 역사관 -->
+        <article id="history">
+            <h2>SINCE 1956</h2>
+            <div class="center box-wrap">                
+                <ul class="text-box">
+                    <li class="history-title active">Only ORION, the ORION WAY</li>
+                    <li class="history-content active">오리온은 혁신적인 생각과 방법으로 오리온만의 격을 찾고,
+                        스스로 그 격을 높임으로써 시장을 선도해 나가고 있습니다.
+                        진정으로 고객을 생각하는 마음과, 남다르게  새로운 가치를
+                        창출해내는 Only ORION의 경쟁력으로, 오리온은
+                        World-class Company를 향해 힘차게 도약하고 있습니다.</li>
+                </ul>
+                <div class="img-box">
+                    <img src="img/history_chocopie.png" alt="SINCE 1956 오리온 역사관">
+                    <!-- 역사관 1956,2019 버튼 (pc용) -->
+                    <button class="btn-1956"><span class="blind">1956</span></button>
+                    <button class="btn-2019"><span class="blind">2019</span></button>
+                </div>
+                <button class="btn-history"><span>오리온 역사관</span></button>
+            </div>
+        </article>
+
+        <!-- 이벤트/소식 -->
+        <article id="event">
+            <h2>이벤트/소식</h2>
+            <div class="center">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_1.jpg" alt="발렌타인데이 선물로 지금 바로GET">
+                                    <i class="icon icon-post"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>네이버 포스트</strong>
+                                    <p>예쁨돋는 발렌타인데이 선물 추천 한정판 해피하트컬렉션</p>
+                                </div> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_2.jpg" alt="뭉쳐서감자">
+                                    <i class="icon icon-facebook"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>페이스북</strong>
+                                    <p>요즘 맛집으로 소문난 <b>#뭉쳐야감자 #페스티벌</b>은 감자튀김 먹으러 가는거 아님?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_3.jpg" alt="파스타칩 머쉬룸크림맛">
+                                    <i class="icon icon-facebook"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>페이스북</strong>
+                                    <p>더 착한 가격으로 돌아온 마켓오 파스타칩 양파, 그린빈, 버섯! 맛있는 원물 대폭발 <b>#해물스파이시맛 #머쉬룸크림맛</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_4.jpg" alt="마켓오 파스타칩 체험단 당첨자 발표">
+                                    <i class="icon icon-blog"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>블로그</strong>
+                                    <p>파스타의 풍미를 그대로 담았다! 파스타칩 해물스파이시맛 & 머쉬룸크림맛 체험단 발표</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_5.jpg" alt="초코파이情레시피">
+                                    <i class="icon icon-blog"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>블로그</strong>
+                                    <p>초코파이 어디까지 먹어봤니?! 오리온 초코파이情 레시피 총집합</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_6.jpg" alt="초코파이하우스 구매 인증 이벤트">
+                                    <i class="icon icon-instagram"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>인스타그램</strong>
+                                    <p>초코파이 하우스 구매 인증 <b>#이벤트</b> 마켓컬리와 헬로네이처에서 디저트 초코파이 7종 & 생초콜릿을 만나보세요.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="card-box">
+                                    <img src="img/event_7.jpg" alt="마켓오 다쿠아즈 머랭반죽에 아몬드를 더해 폭신한 프랑스 정통 디저트">
+                                    <i class="icon icon-notice"></i>
+                                </div>
+                                <div class="card-des">
+                                    <strong>공지사항</strong>
+                                    <p>폭신폭신-행복하게 입 안을 채우는 프랑스 정통 디저트 다쿠아즈 헤이즐넛 크림과 만나 아몬드라마틱하게 귀환!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 페이지네이션 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <!-- 오리온 CF -->
+        <article id="cfvideo">
+            <div class="cfvideo center">
+                <h2>오리온 CF</h2>
+                <strong>재미있는 오리온의 CF를 감상해보세요</strong>
+                <p>잊을 수 없는 추억 속 광고를 새록새록 떠올려 보세요.</p>
+                <iframe  src="https://www.youtube.com/embed/hmjTY_sghZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>*고화질로 감상하고 싶다면 재생버튼을 눌러주세요.</p>
+            </div>
+            <a href="#">영상 더보기</a>
+        </article>
+
+        <!-- 매장찾기 -->
+        <article id="store">
+            <h2>매장찾기</h2>
+            <div class="center">
+                <div class="store-search">
+                    <nav class="tab">
+                        <ul class="store-tab">
+                            <li class="chocopiehouse active"><a href="#" class="icon icon-chocopiehouse active"><span class="blind">초코파이하우스</span></a></li>
+                            <li class="marketo"><a href="#" class="icon icon-marketo"><span class="blind">마켓오레스토랑</span></a></li>
+                        </ul>
+                    </nav>
+                    <form action="#">
+                        <label for="store-search" class="blind">매장찾기</label>
+                        <div class="row">
+                            <div class="location location-all">
+                                <button type="button" id="select-choice"><span>도/시 선택</span><i class="icon icon-dropdown"></i></button>
+                                <ul class="select-choice scrollbar-inner">
+                                    <li><a href="#location1">서울</a></li>
+                                    <li><a href="#location2">강원</a></li>
+                                    <li><a href="#location3">경기</a></li>
+                                </ul>
+                            </div>
+                            <div class="location location-result">
+                                <button type="button" id="select-result"><span>구/군 선택</span><i class="icon icon-dropdown"></i></button>
+                                <ul class="select-result scrollbar-inner">
+                                    <!-- <li><a href="#location-2">강남구</a></li>
+                                    <li><a href="#location-2">강동구</a></li>
+                                    <li><a href="#location-2">강북구</a></li>
+                                    <li><a href="#location-2">강서구</a></li>
+                                    <li><a href="#location-2">관악구</a></li>
+                                    <li><a href="#location-2">광진구</a></li>
+                                    <li><a href="#location-2">구로구</a></li>
+                                    <li><a href="#location-2">금천구</a></li>
+                                    <li><a href="#location-2">노원구</a></li>
+                                    <li><a href="#location-2">도봉구</a></li>
+                                    <li><a href="#location-2">동대문구</a></li>
+                                    <li><a href="#location-2">동작구</a></li>
+                                    <li><a href="#location-2">마포구</a></li>
+                                    <li><a href="#location-2">서대문구</a></li>
+                                    <li><a href="#location-2">서초구</a></li>
+                                    <li><a href="#location-2">성동구</a></li>
+                                    <li><a href="#location-2">성북구</a></li>
+                                    <li><a href="#location-2">송파구</a></li>
+                                    <li><a href="#location-2">양천구</a></li>
+                                    <li><a href="#location-2">영등포구</a></li>
+                                    <li><a href="#location-2">용산구</a></li>
+                                    <li><a href="#location-2">은평구</a></li>
+                                    <li><a href="#location-2">종로구</a></li>
+                                    <li><a href="#location-2">중구</a></li>
+                                    <li><a href="#location-2">중랑구</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" name="sc-word" id="sc-word" placeholder="매장명">
+                            <button type="submit">검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- 모바일용 -->
+                <div class="mobile">
+                    <img src="img/store_bg_m.jpg" alt="내 주변 가장 가까운 매장을 찾아보세요! 초코파이 하우스, Market">
+                    <button class="btn-m-store-search"><span>매장찾기</span><i class="icon icon-search-m"></i></button>
+                </div>
+                <!-- 지도 -->
+                <div id="map"></div>
+            </div>
+        </article>    
+    </section>
+
+    <footer class="hidden">
+        <div class="center footer-wrap">
+            <ul class="sns-list">
+                <li>
+                    <a href="#" class="icon icon-blog" target="_blank"><span class="blind">네이버블로그 바로가기 새창</span></a>
+                </li>
+                <li>
+                    <a href="#" class="icon icon-facebook" target="_blank"><span class="blind">페이스북 바로가기 새창</span></a>
+                </li>
+                <li>
+                    <a href="#" class="icon icon-instagram" target="_blank"><span class="blind">인스타그램 바로가기 새창</span></a>
+                </li>
+                <li>
+                    <a href="#" class="icon icon-youtube" target="_blank"><span class="blind">유튜브 바로가기 새창</span></a>
+                </li>
+            </ul>
+            <div class="info-wrap">
+                <a href="#" class="custom-con"><span>1:1이메일 문의 ></span></a>
+                <h1 class="icon icon-footer-logo"></h1>
+                <div class="info-box">
+                    <ul class="info-link">
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이메일주소수집거부</a></li>
+                    </ul>
+                    <ul class="info">
+                        <li>전화번호 : 02-710-6000</li>
+                        <li>상담실 : 080-023-5700 (수신자부담)</li>
+                        <li>제품 구입 문의 : 02-710-6083</li>
+                        <li>ORIONMASTER@ORIONWORLD.COM</li>
+                        <li>주소 : 서울시 용산국 백범로 90다길 13</li>
+                    </ul>
+                    <small>&copy; COPYRIGHT ORION CORP. ALL RIGHT RESERVED.</small>        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Top버튼 -->
+    <button class="top-btn icon icon-topgo"><span class="blind">위로가기</span></button>
+      
+    <!-- 팝업용 백그라운드 -->
+    <div class="loading">
+        <span>LOADING</span>
+        <div>
+            <span class="dot"></span>
+        </div>
+    </div>
+</body>
+</html>

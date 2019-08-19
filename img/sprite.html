@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오리온 스프라이트 이미지</title>
+    <style>
+        .blind{font-size: 0; position: absolute; left: -9999px; visibility: hidden;}
+        .icon{
+            display: inline-block;
+            background-image: url(img/sprite.png)
+        }
+        .icon-search{width: 30px; height: 30px; background-position: 0px 0px;}
+        .icon-prev{width: 60px; height: 60px; background-position: -40px 0px;}
+        .icon-next{width: 60px; height: 60px; background-position: -100px 0px;}
+        .icon-facebook{width: 40px; height: 40px; background-position: -200px 0px;}
+        .icon-blog{width: 40px; height: 40px; background-position: -260px 0px;}
+        .icon-instagram{width: 40px; height: 40px; background-position: -320px 0px;}
+        .icon-notice{width: 40px; height: 40px; background-position: -380px 0px;}
+        .icon-youtube{width: 40px; height: 40px; background-position: -440px 0px;}
+        .icon-post{width: 40px; height: 40px; background-position: -440px -60px;}
+        .icon-logo{width: 158px; height: 34px; background-position: 0px -100px;}
+        .icon-footer-logo{width: 158px; height: 34px; background-position: -200px -100px;}
+        .icon-marketo{width: 98px; height: 21px; background-position: 0px -200px;}
+        .icon-chocopiehouse{width: 146px; height: 19px; background-position: -120px -200px;}
+        .icon-top{width: 25px; height: 49px; background-position: -290px -200px;}
+        .icon-storedropdown{width: 10px; height: 50px; background-position: -330px -200px;}
+        .icon-storedropup{width: 10px; height: 50px; background-position: -360px -200px;}
+        .icon-close{width: 40px; height: 40px; background-position: -400px -200px;}
+        /* 모바일 */
+        .icon-m{
+            display: inline-block;
+            background-image: url(img/sprite_m.png)
+        }
+        .icon-m.icon-menu{width: 50px; height: 50px; background-position: 0px 0px;}
+        .icon-m.icon-search{width: 50px; height: 50px; background-position: -70px 0px;}
+        .icon-m.icon-close{width: 50px; height: 50px; background-position: -140px 0px;}
+        .icon-m.icon-menudropdown{width: 40px; height: 100px; background-position: -210px 0px;}
+        .icon-m.icon-menudropup{width: 40px; height: 100px; background-position: -270px 0px;}
+        .icon-m.icon-logo{width: 186px; height: 40px; background-position: 0px -100px;}
+        .icon-m.icon-footer-logo{width: 232px; height: 50px; background-position: -200px -100px;}
+        .icon-m.icon-blog{width: 80px; height: 80px; background-position: 0px -200px;}
+        .icon-m.icon-facebook{width: 80px; height: 80px; background-position: -100px -200px;}
+        .icon-m.icon-instagram{width: 80px; height: 80px; background-position: -200px -200px;}
+        .icon-m.icon-youtube{width: 80px; height: 80px; background-position: -300px -200px;}
+        .icon-m.icon-notice{width: 80px; height: 80px; background-position: -400px -200px;}
+        .icon-m.icon-post{width: 80px; height: 80px; background-position: 0px -300px;}
+    </style>
+</head>
+<body>
+    <span class="icon icon-search"><span class="blind">찾기</span></span>
+    <span class="icon icon-prev"><span class="blind">이전</span></span>
+    <span class="icon icon-next"><span class="blind">다음</span></span>
+    <span class="icon icon-facebook"><span class="blind">페이스북</span></span>
+    <span class="icon icon-blog"><span class="blind">블로그</span></span>
+    <span class="icon icon-instagram"><span class="blind">인스타그램</span></span>
+    <span class="icon icon-notice"><span class="blind">공지사항</span></span>
+    <span class="icon icon-youtube"><span class="blind">유튜브</span></span>
+    <span class="icon icon-post"><span class="blind">포스트</span></span>
+    <span class="icon icon-logo"><span class="blind">로고</span></span>
+    <span class="icon icon-footer-logo"><span class="blind">로고</span></span>
+    <span class="icon icon-marketo"><span class="blind">마켓오</span></span>
+    <span class="icon icon-chocopiehouse"><span class="blind">초코파이하우스</span></span>
+    <span class="icon icon-top"><span class="blind">위로가기버튼</span></span>
+    <span class="icon icon-storedropdown"><span class="blind">매장찾기드롭다운</span></span>
+    <span class="icon icon-storedropup"><span class="blind">매장찾기드롭업</span></span>
+    <span class="icon icon-close"><span class="blind">닫기버튼</span></span>
+
+    <span class="icon-m icon-menu"><span class="blind">메뉴</span></span>
+    <span class="icon-m icon-search"><span class="blind">이전</span></span>
+    <span class="icon-m icon-close"><span class="blind">다음</span></span>
+    <span class="icon-m icon-menudropdown"><span class="blind">페이스북</span></span>
+    <span class="icon-m icon-menudropup"><span class="blind">페이스북</span></span>
+    <span class="icon-m icon-logo"><span class="blind">페이스북</span></span>
+    <span class="icon-m icon-footer-logo"><span class="blind">페이스북</span></span>
+    <span class="icon-m icon-blog"><span class="blind">페이스북</span></span>
+    <span class="icon-m icon-facebook"><span class="blind">페이스북</span></span>
+    <span class="icon-m icon-instagram"><span class="blind">인스타그램</span></span>
+    <span class="icon-m icon-youtube"><span class="blind">유튜브</span></span>
+    <span class="icon-m icon-notice"><span class="blind">공지사항</span></span>
+    <span class="icon-m icon-post"><span class="blind">유튜브</span></span>
+</body>
+</html>
